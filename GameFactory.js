@@ -28,7 +28,6 @@ function Game(home, away) {
       this.incrementScore(team ? "home" : "away", points);
     },
     simulateGame: function (show) {
-      console.log(this.opponents.home, this.opponents.away);
       while (!this._gameOver) {
         this.randomScorer();
         if (
