@@ -1,0 +1,20 @@
+{
+  "name": "nba_simulation",
+  "version": "1.0.0",
+  "description": "NBA Season Simulator",
+  "main": "nba.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node nba.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryantellius/nba_simulation.git"
+  },
+  "author": "Ben Bryant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryantellius/nba_simulation/issues"
+  },
+  "homepage": "https://github.com/Bryantellius/nba_simulation#readme"
+}
