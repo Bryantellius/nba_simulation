@@ -15,12 +15,17 @@ function NBA() {
     season: {
       2022: [],
     },
+    generateOpponents() {
+      this.teams.forEach((team, idx, arr) => team.defineOpponents(arr));
+    },
     simulateSeason: function (show = false) {
-      for (let i = 0; i < this.teams.length * this._totalgames; i++) {
-        let game = Game(...this.randomTeam());
-        game.simulateGame(show);
-        this.season["2022"].push(game);
-      }
+      this.teams.forEach((team) => {
+        team.opponents.forEach((opp) => {
+          let game = Game(team, opp);
+          game.simulateGame(show);
+          this.season["2022"].push(game);
+        });
+      });
     },
     displayRankings() {
       this.teams
