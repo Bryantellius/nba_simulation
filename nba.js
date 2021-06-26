@@ -1,13 +1,10 @@
-const NBA = require("./NBAFactory")
+const NBA = require("./models/NBAFactory")
 
 // Create an instance of NBA
 const nba = NBA();
 
 // Add the nba teams
 nba.addTeams();
-
-// Generate opponents for each team
-nba.generateOpponents();
 
 // Simulate games per team x opponent
 nba.simulateSeason();
